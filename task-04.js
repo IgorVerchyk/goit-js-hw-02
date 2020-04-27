@@ -1,17 +1,5 @@
-const formatString = function (string) {
-  let splitedString = string.split("");
-  //let cuttedText;
-  //if (splitedString.length < 40) {
-  // cuttedText = splitedString.join("");
-  //} else {
-  // splitedString.length = 40;
-  // cuttedText = `${splitedString.join("")}...`;
-  //}
-  //return cuttedText;
-  return splitedString.lenght < 40
-    ? splitedString.join("")
-    : ((splitedString.length = 40), `${splitedString.join("")}...`);
-};
+const formatString = (string) =>
+  string.length > 40 ? `${string.slice(0, 40)}...` : string;
 console.log(formatString("Curabitur ligula sapien, tincidunt non."));
 
 console.log(formatString("Vestibulum facilisis, purus nec pulvinar iaculis."));

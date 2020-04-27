@@ -6,10 +6,13 @@ function sumInput() {
     if (input === "" || input === null) break;
     numbers.push(+input);
   }
-
   let total = 0;
-  for (let i = 0; i < numbers.length; i += 1) {
-    total += numbers[i];
+  if (numbers.length > 1) {
+    for (let i = 0; i < numbers.length; i += 1) {
+      total += numbers[i];
+    }
+  } else {
+    total = `Array is empty`;
   }
   return total;
 }

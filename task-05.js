@@ -1,5 +1,6 @@
 const checkForSpam = (message) =>
-  /sale/.test(message.toLowerCase()) || /spam/.test(message.toLowerCase());
+  message.toLowerCase().includes("sale") ||
+  message.toLowerCase().includes("spam");
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.

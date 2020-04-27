@@ -1,7 +1,7 @@
 const logItems = function (logItems) {
   for (let i = 0; i < logItems.length; i += 1) {
-    const a = `${i + 1}-${logItems[i]}`;
-    console.log(a);
+    const sequenseNumber = `${i + 1}-${logItems[i]}`;
+    console.log(sequenseNumber);
   }
 };
 logItems(["Mango", "Poly", "Ajax", "Lux", "Jay", "Kong"]);
