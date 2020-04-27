@@ -7,12 +7,12 @@ const isLoginUnique = function (logins, login) {
 };
 const addLogin = function (logins, login) {
   if (isLoginValid(login) === false) {
-    console.log("Ошибка! Логин должен быть от 4 до 16 символов");
+    return "Ошибка! Логин должен быть от 4 до 16 символов";
   } else if (isLoginUnique(logins, login) === false) {
-    console.log("Такой логин уже используется!");
+    return "Такой логин уже используется!";
   } else {
     logins.push(login);
-    console.log("Логин успешно добавлен!");
+    return "Логин успешно добавлен!";
   }
 };
 console.log(addLogin(logins, "Ajax")); // 'Логин успешно добавлен!'
