@@ -1,8 +1,5 @@
-const checkForSpam = function (message) {
-  return (
-    /sale/.test(message.toLowerCase()) || /spam/.test(message.toLowerCase())
-  );
-};
+const checkForSpam = (message) =>
+  /sale/.test(message.toLowerCase()) || /spam/.test(message.toLowerCase());
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
