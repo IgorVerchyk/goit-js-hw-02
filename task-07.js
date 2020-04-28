@@ -3,7 +3,7 @@ const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 const isLoginValid = (login) => login.length >= 4 && login.length <= 16;
 
 const isLoginUnique = function (logins, login) {
-  return logins.includes(login) ? false : true;
+  return logins.includes(login) ? true : false;
 };
 const addLogin = function (logins, login) {
   if (isLoginValid(login) === false) {
