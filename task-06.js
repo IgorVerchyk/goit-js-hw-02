@@ -7,7 +7,7 @@ function sumInput() {
     numbers.push(+input);
   }
   let total = 0;
-  if (numbers.length > 1) {
+  if (numbers.length > 0) {
     for (let i = 0; i < numbers.length; i += 1) {
       total += numbers[i];
     }
